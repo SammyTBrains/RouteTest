@@ -12,7 +12,8 @@ const HomePage = () => {
     <Fragment>
       <h1>My home page</h1>
       <p>
-        Go to <Link to="/products">the list of products</Link>
+        Go to <Link to="products">the list of products</Link>
+        {/*Relative path just appends to end of currently active path, no slash in front*/}
       </p>
       <p>
         <button onClick={navigateHandler}>Navigate to products</button>
