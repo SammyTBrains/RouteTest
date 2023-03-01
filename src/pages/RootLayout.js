@@ -1,11 +1,16 @@
 import { Outlet } from "react-router-dom";
 
+import classes from "./RootLayout.module.css";
+import MainNavigation from "../components/MainNavigation";
+
 const RootLayout = () => {
   return (
     //Another way to type fragment?
     <>
-      <h1>Root Layout</h1>
-      <Outlet />
+      <MainNavigation />
+      <main className={classes.content}>
+        <Outlet />
+      </main>
     </>
   );
 };
